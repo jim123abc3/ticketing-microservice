@@ -29,12 +29,3 @@ class NatsWrapper {
 }
 
 export const natsWrapper = new NatsWrapper();
-
-
-// In src / nats - wrapper.ts, we just need to add the void type to the Promise:
-
-// return new Promise<void>((resolve, reject) => {
-//   this._client!.on('connect', () => {
-//   console.log('Connected to NATS');
-//   resolve();
-// });
