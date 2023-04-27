@@ -6,7 +6,7 @@ export default ({ req }) => {
 
     return axios.create({
       baseURL:
-        'https://ticket-app-prod-long-url.store/',
+        'http://ticket-app-prod-long-url.store/',
       headers: req.headers,
     });
   } else {
